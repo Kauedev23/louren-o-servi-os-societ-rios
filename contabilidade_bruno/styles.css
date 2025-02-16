@@ -1,0 +1,247 @@
+body {
+    background: linear-gradient(to right, #f4f4f4, #eaeaea);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    height: 50px;
+}
+
+.name_title {
+    color: #e65a5a;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    text-align: center;
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e65a5a;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.intro, .services, .contact, .testimonials {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #e65a5a;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    color: #1f1f1f;
+    text-decoration: none;
+    font-family: 'Arial', Helvetica, sans-serif;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e65a5a;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e65a5a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d9534f;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@keyframes changeColor {
+    to {
+        color: rgb(209, 107, 107);
+    }
+}
+
+/* Estilos para o carrossel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Aumente o tamanho máximo do carrossel */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 300px; /* Aumente o tamanho das imagens */
+    height: 300px; /* Aumente o tamanho das imagens */
+    margin-bottom: 10px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+/* Estilos para os comentários de clientes */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    margin: 0;
+    font-style: italic;
+}
+
+.testimonial p:last-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .name_title {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+
+
+
